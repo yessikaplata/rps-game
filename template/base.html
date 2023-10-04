@@ -1,0 +1,38 @@
+
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{template  "title" .}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="/">Rock-Paper-Scissors</a>
+                    </div>
+                    <nav>            
+                        <a href="/new">New</a>
+                        <a href="/about">About</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    {{template  "content" .}}
+    <footer class="mt-auto bg-light text-center py-4">
+        <p class="mb-0">Created by YLPJ &copy; 2023.</p>
+        <p class="mb-0 footer-credits"><a href="https://www.freepik.es/vector-gratis/banners-dibujos-animados-tijeras-papel-piedra-manos_24595967.htm#query=paper%20scissors%20rock&position=4&from_view=search&track=ais" target="_blank">Images by upklyak</a> in Freepik
+        </p>
+    </footer>
+    <script src="/static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+{{end}}

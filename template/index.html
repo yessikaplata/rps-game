@@ -1,0 +1,25 @@
+{{template "base" .}}
+{{ define "title"}} Rock-Paper-Scissors Index {{end}}
+{{ define "content"}} 
+    <section class="container py-5">
+        <h1 class="display-4 fw-bold py-3 text-center">Welcome to Rock Paper Scissors</h1>
+        <p class="text-center">
+            <a href="/new" class="btn btn-success btn-lg">New game</a>
+        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="static/img/game1.png" alt="rock" class="img-fluid img-index">
+            </div>
+            <div class="col-md-4">
+                <img src="static/img/game2.png" alt="rock" class="img-fluid img-index">
+            </div>
+            <div class="col-md-4">
+                <img src="static/img/game3.png" alt="rock" class="img-fluid img-index">
+            </div>
+        </div>
+        <br/>
+        <p class="text-center">
+            <a href="/new" class="btn btn-success btn-lg">New game</a>
+        </p>
+    </section>
+{{end}}
